@@ -1,0 +1,213 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover .nav-link {
+  color: #f2bb13 !important;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+
+.hero-image {
+  background: url('images/shaheerr.jpg') no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-image .container {
+  z-index: 1;
+}
+
+.hero-image .container .lead {
+  font-weight: 400;
+  color: #d0d5db;
+}
+
+.hero-image .container .btn {
+  color: #f2bb13;
+  font-weight: 500;
+  font-size: large;
+  border-radius: 2em;
+  border: 1px solid rgba(255, 166, 0, 0.955);
+  padding: 0.7em;
+  transition: background-color 0.5s ease;
+}
+
+.hero-image .container .btn:hover {
+  background-color: #f2bb13;
+  color: black;
+}
+
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 166, 0, 0.369);
+  color: rgba(255, 166, 0, 0.955);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.featured-work {
+  color: white;
+  font-weight: bolder;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.featured-work span {
+  color: #f2bb13;
+}
+
+.card {
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover::before {
+  opacity: 0;
+}
+
+.last {
+  padding: 0.5em;
+  background-color: rgb(24, 23, 23);
+}
+
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-touch {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.contact-touch span {
+  color: #f2bb13;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.7em;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  font-weight: bolder;
+  color: rgb(52, 51, 51);
+  transition: color 0.5s ease;
+}
+
+.social-icons a:hover {
+  color: #f2bb13;
+}
+
+input[type="text"],
+input[type="email"],
+#message {
+  color: #f2bb13;
+  font-weight: 600;
+  background-color: rgb(44, 43, 43);
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+#message:focus {
+  outline: none;
+  box-shadow: 0 0 6px 2px #f2bb13;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+#message::placeholder {
+  color: #b3782b;
+  font-weight: lighter;
+}
+
+.btn-custom {
+  font-weight: 500;
+  color: white;
+  background-color: #ff9101;
+  padding: 7px;
+  width: 80%;
+  transition: background-color 0.5s ease;
+}
+
+.btn-custom:hover {
+  border: 1px solid #f2bb13;
+  color: #f2bb13;
+}
+
+.col-md-5 p {
+  font-weight: 500;
+  font-size: large;
+  color: #d0d5db;
+}
+
+hr {
+  color: #ff9101;
+}
+
+.copyRight {
+  color: #d0d5db;
+  font-style: italic;
+  text-align: center;
+}
