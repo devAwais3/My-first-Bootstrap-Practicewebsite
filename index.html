@@ -151,21 +151,22 @@
             <h1 class="contact-touch">Get in <span>Touch</span></h1>
             <div class="row mt-4">
                 <div class="col-md-7">
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="deb4de27-e6d6-4d6f-8851-f2b5e1c1573a">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control-sm" id="name" placeholder="Your Name" required>
+                            <input type="text" class="form-control-sm" id="name" name="Accessed via SheeroClicks" placeholder="Your Name" required>
                         </div>
 
                         <div class="form-floating mb-3 ">
-                            <input type="email" class="form-control-sm" id="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control-sm" id="email" name="email" placeholder="Your Email" required>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control-sm" id="subject" placeholder="Subject" required>
+                            <input type="text" class="form-control-sm" id="subject" name="subject" placeholder="Subject" required>
                         </div>
 
                         <div class="form-group mb-3">
-                            <textarea class="form-control form-control-sm" id="message" style="height: 100px;"
+                            <textarea class="form-control form-control-sm" id="message" name="message" style="height: 100px;"
                                 placeholder="Your Message" required></textarea>
                         </div>
 
